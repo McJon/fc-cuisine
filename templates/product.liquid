@@ -1,14 +1,17 @@
-<!-- /templates/product.liquid -->
 {% comment %}
-  The contents of the product.liquid template can be found in /sections/product-template.liquid
+  The contents of the product.liquid template can be found in /sections/product-template/
 {% endcomment %}
 
 {% section 'product-template' %}
 {% section 'product-recommendations' %}
 
-{% if collection %}
-  <hr class="hr--clear">
-  <div class="text-center">
-    <a href="{{ collection.url }}" class="return-link">&larr; {{ 'products.general.collection_return' | t: collection: collection.title }}</a>
-  </div>
-{% endif %}
+<script>
+  window.theme = window.theme || {};
+  window.theme.strings = window.theme.strings || {};
+
+  // Override default values of theme.strings for each template.
+  // Values are used by JavaScript only; Liquid must be updated separately
+  window.theme.strings.addToCart = {{ 'products.product.add_to_cart' | t | json }};
+  window.theme.strings.soldOut = {{ 'products.product.sold_out' | t | json }};
+  window.theme.strings.unavailable = {{ 'products.product.unavailable' | t | json }};
+</script>

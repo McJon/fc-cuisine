@@ -1,8 +1,14 @@
 {
   "general": {
     "accessibility": {
+      "skip_to_content": "ข้ามไปที่เนื้อหา",
       "refresh_page": "การเลือกตัวเลือกจะส่งผลให้มีการรีเฟรชทั้งหน้า",
       "unit_price_separator": "ต่อ",
+      "link_messages": {
+        "new_window": "เปิดในหน้าต่างใหม่",
+        "external": "เปิดเว็บไซต์ภายนอก",
+        "new_window_and_external": "เปิดเว็บไซต์ภายนอกในหน้าต่างใหม่"
+      },
       "selection_help": "กดปุ่ม Space แล้วกดปุ่มลูกศรเพื่อเลือก"
     },
     "meta": {
@@ -11,14 +17,16 @@
     },
     "404": {
       "title": "404 ไม่พบหน้านี้",
-      "subtext_html": "ไม่พบหน้าที่คุณกำลังค้นหาอยู่ <a href=\"{{ link }}\" class=\"text-link\">คลิกที่นี่<\/a>เพื่อช้อปปิ้งต่อ"
+      "subtext_html": "ไม่มีหน้าที่คุณร้องขอ",
+      "404_link": "เลือกซื้อต่อ"
     },
     "pagination": {
       "previous": "ก่อนหน้า",
       "next": "ถัดไป"
     },
     "password_page": {
-      "login_form_heading": "เข้าสู่ร้านค้าโดยใช้รหัสผ่าน:",
+      "close_modal": "ปิดโมดอลรหัสผ่านการเข้าสู่ระบบ",
+      "login_form_heading": "เข้าร้านค้าโดยใช้รหัสผ่าน",
       "login_form_password_label": "รหัสผ่าน",
       "login_form_password_placeholder": "รหัสผ่านของคุณ",
       "login_form_submit": "ป้อน",
@@ -26,54 +34,52 @@
       "signup_form_success": "เราจะส่งอีเมลแจ้งคุณก่อนที่ร้านจะเปิด!",
       "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"\/admin\" class=\"text-link\">เข้าสู่ระบบที่นี่<\/a>",
       "password_link": "เข้าโดยใช้รหัสผ่าน",
-      "powered_by_shopify_html": "ร้านค้านี้จะได้รับการสนับสนุนจาก {{ shopify }}",
-      "close": "ปิด (esc)"
+      "powered_by_shopify_html": "ร้านค้านี้จะได้รับการสนับสนุนจาก {{ shopify }}"
     },
     "social": {
+      "share": "แชร์",
       "share_on_facebook": "แชร์",
       "share_on_twitter": "ทวีต",
       "share_on_pinterest": "ปักหมุด",
+      "social_platform": "{{ name }} บน {{ platform }}",
       "alt_text": {
         "share_on_facebook": "แชร์บน Facebook",
         "share_on_twitter": "ทวีตบน Twitter",
         "share_on_pinterest": "ปักหมุดบน Pinterest"
       }
     },
+    "search": {
+      "title": "ค้นหาในเว็บไซต์ของเรา",
+      "search_results_title": "ผลลัพธ์การค้นหา",
+      "placeholder": "ค้นหา",
+      "submit": "ค้นหาอีกครั้ง",
+      "results_count_html": {
+        "one": "ตรงกัน {{ count }} รายการสำหรับ <strong>{{ terms }}<\/strong>",
+        "other": "ตรงกัน {{ count }} รายการสำหรับ <strong>{{ terms }}<\/strong>"
+      }
+    },
     "newsletter_form": {
-      "newsletter_email": "สมัครรับข้อมูลจากรายชื่ออีเมลของเรา",
-      "newsletter_placeholder": "อีเมลของคุณ",
-      "newsletter_confirmation": "ขอขอบคุณที่สมัครรับข้อมูล",
+      "newsletter_placeholder": "ที่อยู่อีเมลของฉัน",
+      "confirmation": "ขอขอบคุณที่สมัครรับข้อมูล",
+      "blank_error": "ไม่สามารถเว้นว่างช่องอีเมลได้",
+      "invalid_error": "กรุณาใส่ที่อยู่อีเมลที่ถูกต้อง",
       "submit": "สมัครรับข้อมูล"
     },
-    "search": {
-      "no_results_html": "ไม่พบผลลัพธ์การค้นหาของคุณสำหรับ \"{{ terms }}\"",
-      "results_for_html": "พบผลลัพธ์การค้นหาของคุณสำหรับ \"{{ terms }}\" ดังนี้:",
-      "title": "ค้นหา",
-      "placeholder": "ค้นหาในร้านค้าของเรา",
-      "submit": "ค้นหา"
+    "header": {
+      "menu": "เมนู",
+      "view_cart": "ดูตะกร้าสินค้า"
     },
-    "drawers": {
-      "navigation": "การนำทางเว็บไซต์",
-      "close_menu": "ปิดเมนู",
-      "expand_submenu": "ขยายเมนูย่อย",
-      "collapse_submenu": "ย่อเมนูย่อย"
+    "navigation": {
+      "toggle_sublinks": "เมนู{{ link_title }}"
     },
     "payment": {
-      "method": "วิธีการชำระเงิน"
-    },
-    "currency": {
-      "dropdown_label": "สกุลเงิน"
-    },
-    "language": {
-      "dropdown_label": "ภาษา"
+      "method": "ไอคอนการชำระเงิน"
     }
   },
   "blogs": {
     "article": {
-      "tags": "แท็ก",
-      "read_more": "อ่านต่อ",
-      "view_all": "ดูทั้งหมด",
-      "back_to_blog": "กลับไปยัง {{ title }}"
+      "read_more": "อ่านเพิ่มเติม",
+      "no_matches": "ขออภัย ไม่มีบทความที่ได้รับการตีพิมพ์ในบล็อกนี้"
     },
     "comments": {
       "title": "แสดงความคิดเห็น",
@@ -92,7 +98,7 @@
   },
   "cart": {
     "general": {
-      "title": "ตะกร้าสินค้าของคุณ",
+      "title": "ตะกร้าสินค้า",
       "remove": "ลบออก",
       "note": "คำแนะนำพิเศษสำหรับผู้ขาย",
       "subtotal": "ยอดรวมย่อย",
@@ -103,28 +109,33 @@
       "update": "อัปเดตตะกร้าสินค้า",
       "checkout": "การชำระเงิน",
       "empty": "ตะกร้าของคุณว่างอยู่ในขณะนี้",
-      "continue_browsing_html": "เรียกดูต่อ<a href=\"{{ link }}\">ที่นี่<\/a>",
+      "continue_browsing": "เลือกดูต่อที่นี่",
       "close_cart": "ปิดตะกร้าสินค้า",
-      "savings_html": "คุณจะประหยัด {{ savings }}",
-      "reduce_quantity": "ลดจำนวนสินค้าลงหนึ่งชิ้น",
-      "increase_quantity": "เพิ่มจำนวนสินค้าหนึ่งชิ้น",
-      "cookies_required": "เปิดใช้คุกกี้เพื่อใช้ตะกร้าสินค้า"
+      "savings": "คุณจะประหยัด ",
+      "item_quantity": "จำนวนรายการ",
+      "cookies_required": "เปิดใช้คุกกี้เพื่อใช้ตะกร้าสินค้า",
+      "cart_error": "เกิดข้อผิดพลาดระหว่างการอัปเดตตะกร้าสินค้าของคุณ โปรดลองอีกครั้ง",
+      "cart_quantity_error_html": "คุณสามารถเพิ่มได้เพียง {{ quantity }} {{ title }} ไปที่ตะกร้าสินค้าของคุณเท่านั้น"
     },
     "label": {
+      "product": "สินค้า",
+      "price": "ราคา",
       "quantity": "จำนวน",
       "total": "ยอดรวม"
     }
   },
   "collections": {
     "general": {
-      "catalog_title": "แค็ตตาล็อก",
-      "all_of_collection": "ทั้งหมด",
+      "all": "คอลเลกชันทั้งหมด",
+      "view_all": "ดูทั้งหมด",
       "no_matches": "ขออภัย ไม่มีสินค้าในคอลเลกชันนี้"
     },
     "sorting": {
-      "title": "เรียงตาม",
+      "title": "เรียงตาม"
+    },
+    "filters": {
       "title_tags": "กรองตาม",
-      "all_of_collection": "{{ collection }} ทั้งหมด"
+      "all_tags": "สินค้าทั้งหมด"
     }
   },
   "contact": {
@@ -172,7 +183,8 @@
       "update": "อัปเดตที่อยู่",
       "cancel": "ยกเลิก",
       "edit": "แก้ไข",
-      "delete": "ลบ"
+      "delete": "ลบ",
+      "delete_confirm": "คุณแน่ใจหรือไม่ว่าต้องการลบที่อยู่นี้"
     },
     "login": {
       "title": "เข้าสู่ระบบ",
@@ -180,7 +192,6 @@
       "password": "รหัสผ่าน",
       "forgot_password": "ลืมรหัสผ่านของคุณใช่ไหม",
       "sign_in": "ลงชื่อเข้าใช้",
-      "cancel": "กลับไปยังร้านค้า",
       "guest_title": "ดำเนินการต่อในฐานะผู้ใช้ชั่วคราว",
       "guest_continue": "ดำเนินการต่อ"
     },
@@ -239,73 +250,77 @@
       "cancel": "กลับไปยังร้านค้า"
     }
   },
-  "home_page": {
-    "slideshow": {
-      "navigation_instructions": "ใช้ลูกศรซ้าย\/ขวาเพื่อดูสไลด์โชว์ หรือปัดไปทางซ้าย\/ขวาหากคุณกำลังใช้อุปกรณ์มือถือ",
-      "next_slide": "สไลด์ถัดไป",
-      "previous_slide": "สไลด์ก่อนหน้า",
-      "play": "เล่นสไลด์โชว์",
-      "pause": "หยุดสไลด์โชว์ชั่วคราว",
-      "load_slide": "โหลดสไลด์ {{ slide_number }}",
-      "active_slide": "สไลด์ที่ {{ slide_number }} ปัจจุบัน"
-    },
+  "homepage": {
     "onboarding": {
+      "collection_title": "ชื่อคอลเลกชันของคุณ",
       "product_vendor": "ผู้ขายสินค้า",
       "product_title": "ตัวอย่างชื่อสินค้า",
-      "collection_title": "ตัวอย่างชื่อคอลเลกชัน",
       "blog_title": "ชื่อโพสต์ของคุณ",
       "blog_excerpt": "ร้านค้าของคุณยังไม่ได้เผยแพร่โพสต์ในบล็อกใดๆ เลย คุณสามารถใช้บล็อกเพื่อพูดคุยเกี่ยวกับการเปิดตัวสินค้าใหม่ๆ เคล็ดลับต่างๆ หรือข่าวสารอื่นใดที่คุณอยากจะแบ่งปันให้ลูกค้าทราบ รวมถึงสามารถเข้าไปดูบล็อกอีคอมเมิร์ซของ Shopify เพื่อหาแรงบันดาลใจและคำแนะนำสำหรับร้านค้าและบล็อกของคุณได้",
       "no_content": "ขณะนี้ส่วนนี้ยังไม่มีเนื้อหาใดๆ เลย เพิ่มเนื้อหาลงในส่วนนี้โดยใช้แถบด้านข้าง"
-    },
-    "map": {
-      "address_error": "เกิดข้อผิดพลาดในการค้นหาที่อยู่ดังกล่าว",
-      "address_no_results": "ไม่พบผลลัพธ์สำหรับที่อยู่ดังกล่าว",
-      "address_query_limit_html": "คุณใช้ Google API ของคุณเกินขีดจำกัดการใช้งานแล้ว ลองพิจารณาอัปเกรดเป็น<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">แผนพรีเมียม<\/a>",
-      "auth_error_html": "เกิดปัญหาในการยืนยันตัวตนสำหรับบัญชีผู้ใช้ Google Maps ของคุณ"
     }
   },
   "layout": {
-    "cart": {
-      "title": "ตะกร้าสินค้า"
-    },
     "customer": {
       "account": "บัญชีผู้ใช้",
+      "logged_in_as_html": "เข้าสู่ระบบในฐานะ {{ first_name }}",
       "log_out": "ออกจากระบบ",
       "log_in": "เข้าสู่ระบบ",
       "create_account": "สร้างบัญชีผู้ใช้"
     },
     "footer": {
-      "social_platform": "{{ name }} บน {{ platform }}"
+      "copyright": "ลิขสิทธิ์"
     }
   },
   "products": {
-    "general": {
-      "save_html": "ประหยัด<br \/>{{ saved_amount }}",
-      "collection_return": "กลับไปยัง {{ collection }}",
-      "sale_price": "ราคาขาย",
-      "regular_price": "ราคาปกติ",
-      "include_taxes": "รวมภาษี",
-      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
-      "unit_price": "ราคาต่อหน่วย"
-    },
     "product": {
       "sold_out": "ขายหมดแล้ว",
-      "sold_out_html": "สินค้า<br \/>หมด",
       "unavailable": "ไม่พร้อมใช้งาน",
-      "quantity": "จำนวน",
+      "price": "ราคา",
+      "sale_price": "ราคาขาย",
+      "regular_price": "ราคาปกติ",
+      "on_sale_from_html": "ลดราคาจาก {{ price }}",
+      "on_sale": "การขาย",
+      "from_text_html": "จาก {{ price }}",
+      "include_taxes": "รวมภาษี",
+      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "add_to_cart": "เพิ่มลงในตะกร้าสินค้า",
-      "full_details": "รายละเอียดแบบเต็ม",
+      "item_added_to_cart": "เพิ่มสินค้าลงในตะกร้าสินค้าแล้ว!",
+      "view_cart": "ดูตะกร้าสินค้า",
+      "quantity": "จำนวน",
+      "unit_price": "ราคาต่อหน่วย",
       "view_in_space": "ดูในพื้นที่ของคุณ",
-      "view_in_space_label": "ดูในพื้นที่ของคุณ โหลดรายการในหน้าต่างการสร้างวัตถุเสมือน",
-      "gallery_thumbnail_alt": "โหลดรูปภาพลงในเครื่องมือใช้ดูของ Gallery {{ imageAlt }}",
-      "video_thumbnail_alt": "โหลดและเล่นวิดีโอในเครื่องมือดูของแกลเลอรี {{ imageAlt }}",
-      "model_thumbnail_alt": "โหลดโมเดล 3 มิติลงในเครื่องมือใช้ดูของ Gallery {{ imageAlt }}",
-      "slide_label": "สไลด์ที่ {{ slide_number }} จากทั้งหมด {{ slide_max }} สไลด์"
+      "view_in_space_label": "ดูในพื้นที่ของคุณ โหลดรายการในหน้าต่างการสร้างวัตถุเสมือน"
+    }
+  },
+  "sections": {
+    "slider": {
+      "previous_slide": "สไลด์ก่อนหน้า",
+      "next_slide": "สไลด์ถัดไป",
+      "pause": "หยุดวิดีโอพื้นหลังชั่วคราว",
+      "play": "เล่นวีดีโอพื้นหลัง",
+      "slide": "สไลด์ที่ {{ number }}",
+      "navigation_instructions": "ใช้ลูกศรซ้าย\/ขวาเพื่อดูสไลด์โชว์ หรือปัดไปทางซ้าย\/ขวาหากคุณกำลังใช้อุปกรณ์มือถือ",
+      "load_slide": "โหลดสไลด์ {{ slide_number }}",
+      "active_slide": "สไลด์ที่ {{ slide_number }} ปัจจุบัน"
     },
-    "zoom": {
-      "next": "ถัดไป (ปุ่มลูกศรขวา)",
-      "prev": "ก่อนหน้า (ปุ่มลูกศรซ้าย)",
-      "close": "ปิด (Esc)"
+    "map": {
+      "address_error": "เกิดข้อผิดพลาดในการค้นหาที่อยู่ดังกล่าว",
+      "address_no_results": "ไม่พบผลลัพธ์สำหรับที่อยู่ดังกล่าว",
+      "address_query_limit_html": "คุณใช้ Google API ของคุณเกินขีดจำกัดการใช้งานแล้ว ลองพิจารณาอัปเกรดเป็น<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">แผนพรีเมียม<\/a>",
+      "auth_error_html": "เกิดปัญหาในการยืนยันคีย์ Google Maps API ของคุณ"
+    },
+    "product_template": {
+      "slide": "สไลด์ที่ {{ number }}",
+      "image_thumbnail_alt": "เปิดรูปภาพในสไลด์โชว์ {{ image_alt }}",
+      "video_thumbnail_alt": "เปิดและเล่นวิดีโอในสไลด์โชว์ {{ image_alt }}",
+      "model_thumbnail_alt": "เปิดโมเดล 3 มิติในสไลด์โชว์ {{ image_alt }}"
+    },
+    "featured_product": {
+      "full_details": "รายละเอียดแบบเต็ม"
+    },
+    "newsletter": {
+      "submit": "ส่ง"
     }
   },
   "gift_cards": {
@@ -315,10 +330,15 @@
       "disabled": "ปิดใช้งาน",
       "expired": "หมดอายุใน {{ expiry }}",
       "active": "หมดอายุใน {{ expiry }}",
-      "redeem": "ใช้งานรหัสนี้ที่ขั้นตอนการชำระเงินเพื่อแลกรับการ์ดของขวัญของคุณ",
+      "redeem_html": "ใช้งานโค้ดนี้ในขั้นตอนการชำระเงินเพื่อแลกรับบัตรของขวัญหรือ{{ print }}หน้านี้",
       "shop_link": "เริ่มช้อปปิ้ง",
       "print": "พิมพ์",
+      "remaining_html": "เหลือเงิน {{ balance }}",
       "add_to_apple_wallet": "เพิ่มลงใน Apple Wallet"
     }
+  },
+  "video": {
+    "play": "เล่นวิดีโอ",
+    "close": "หยุดวิดีโอ"
   }
 }
