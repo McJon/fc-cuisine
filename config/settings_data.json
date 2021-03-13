@@ -48,9 +48,9 @@
       "header": {
         "type": "header",
         "settings": {
-          "align_logo": "center",
-          "logo": "shopify:\/\/shop_images\/logo.png",
-          "logo_max_width": 105,
+          "align_logo": "left",
+          "logo": "shopify:\/\/shop_images\/CT-black-red-distressed.png",
+          "logo_max_width": 145,
           "main_linklist": "main-menu",
           "message": true,
           "home_page_only": true,
@@ -62,7 +62,7 @@
       "hero": {
         "type": "hero",
         "settings": {
-          "image": "shopify:\/\/shop_images\/thai-food-takeout.jpg",
+          "image": "shopify:\/\/shop_images\/steak-and-flames-on-the-grill.jpg",
           "alignment": "center",
           "hero_layout": "full_width",
           "hero_size": "medium",
@@ -78,18 +78,20 @@
           "slideshow-0": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/thai-food-takeout.jpg",
               "alignment": "center center",
-              "slide_title": "Image slide",
-              "subheading": "Tell your brand's story through images",
+              "slide_title": "",
+              "subheading": "",
               "button_label": ""
             }
           },
           "1492095993817": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/fine-food-dining-in-style.jpg",
               "alignment": "center center",
-              "slide_title": "Image slide",
-              "subheading": "Tell your brand's story through images",
+              "slide_title": "",
+              "subheading": "",
               "button_label": ""
             }
           }
@@ -99,12 +101,12 @@
           "1492095993817"
         ],
         "settings": {
-          "slideshow_height": "medium",
+          "slideshow_height": "small",
           "text_size": "medium",
           "text_alignment": "center center",
           "show_overlay": true,
-          "autorotate": false,
-          "autorotate_speed": 5
+          "autorotate": true,
+          "autorotate_speed": 3
         }
       },
       "featured-collections": {
@@ -178,8 +180,8 @@
           "1492033924902-0": {
             "type": "text",
             "settings": {
-              "title": "Talk about your brand",
-              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "title": "About The Chef's Table",
+              "text": "<p>Our fully licensed restaurant is a live classroom that brings the service and culinary students into real life scenarios that will prepare them for their future in hospitality. Saffron&#x27;s comfortable and welcoming ambiance is capped off by some of the greatest food you will ever find, and brings our guests back time and time again.<\/p>",
               "width": "100%",
               "alignment": "center",
               "align_text": "center"
@@ -294,9 +296,120 @@
       "16118715057eddbfd9": {
         "type": "newsletter",
         "settings": {
-          "section_title": "newsletter",
+          "section_title": "subscribe",
           "subheading": "<p>join to get some special offers and once-in-a-life time deals<\/p>",
           "show_background": true
+        }
+      },
+      "hero-reservation": {
+        "type": "hero-reservation",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/table-for-two.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "RESERVATION",
+          "text": "<p>We accept a limited number of reservations up to one month in advance for parties of up to ten guests.<\/p>",
+          "button_label": ""
+        }
+      },
+      "custom-content-reservation": {
+        "type": "custom-content-reservation",
+        "blocks": {
+          "f9bc7257-1726-45b8-93cb-22ea839454e8": {
+            "type": "text",
+            "settings": {
+              "title": "BY PHONE",
+              "text": "<p>Prefer to make your reservation via phone?                                Call <strong>(519) 452-4433<\/strong> between 10am and noon.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "25380c7b-7a9e-4824-a2b6-913d3cfcad14": {
+            "type": "text",
+            "settings": {
+              "title": "SPECIAL EVENTS & PRIVATE PARTIES",
+              "text": "<p>Catering and Events are opportunities for us to work more closely with our guests, occasions for us to share our dedication to celebration in exciting new ways.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "f9bc7257-1726-45b8-93cb-22ea839454e8",
+          "25380c7b-7a9e-4824-a2b6-913d3cfcad14"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "hero-reservation-center": {
+        "type": "hero-reservation-center",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/inside-of-the-chef-s.jpg",
+          "alignment": "center",
+          "hero_layout": "fixed_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": ""
+        }
+      },
+      "custom-content-reservation-table-book": {
+        "type": "custom-content-reservation-table-book",
+        "blocks": {
+          "2ce7cef3-aada-48dd-a42f-008e2e360e27": {
+            "type": "text",
+            "settings": {
+              "title": "",
+              "text": "<p>Call <strong>(347) 555-1234<\/strong> to reserve a room for your reception or party.<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "2ce7cef3-aada-48dd-a42f-008e2e360e27"
+        ],
+        "settings": {
+          "title": ""
+        }
+      },
+      "reservation-book-call-detail": {
+        "type": "reservation-book-call-detail",
+        "blocks": {
+          "9822985c-face-4582-ab89-d89ed5ca8aa1": {
+            "type": "text",
+            "settings": {
+              "title": "Table of 5 and less",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          },
+          "6d4c3618-cc84-4b50-9184-562e553e6264": {
+            "type": "text",
+            "settings": {
+              "title": "Table of 5 and more",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "width": "50%",
+              "alignment": "center",
+              "align_text": "left"
+            }
+          }
+        },
+        "block_order": [
+          "9822985c-face-4582-ab89-d89ed5ca8aa1",
+          "6d4c3618-cc84-4b50-9184-562e553e6264"
+        ],
+        "settings": {
+          "title": ""
         }
       }
     },
