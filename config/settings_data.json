@@ -411,6 +411,53 @@
         "settings": {
           "title": ""
         }
+      },
+      "hero-news": {
+        "type": "hero-news",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/kitchen.jpg",
+          "alignment": "center",
+          "hero_layout": "full_width",
+          "hero_size": "medium",
+          "text_size": "medium",
+          "title": "NEWS",
+          "text": "<p>Latest news and updates about new recipes brought to you by our fantastic students. <\/p>",
+          "button_label": ""
+        }
+      },
+      "hero-new-receipe-news": {
+        "type": "hero-new-receipe-news",
+        "settings": {
+          "image": "shopify:\/\/shop_images\/Dish_01.jpg",
+          "alignment": "center",
+          "hero_layout": "fixed_width",
+          "hero_size": "small",
+          "text_size": "medium",
+          "title": "",
+          "text": "",
+          "button_label": ""
+        }
+      },
+      "custom-receipe-news-content": {
+        "type": "custom-receipe-news-content",
+        "blocks": {
+          "ea4e2d79-346c-4087-97f4-6ec4f0409586": {
+            "type": "text",
+            "settings": {
+              "title": "New Dish Name",
+              "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+              "width": "100%",
+              "alignment": "center",
+              "align_text": "center"
+            }
+          }
+        },
+        "block_order": [
+          "ea4e2d79-346c-4087-97f4-6ec4f0409586"
+        ],
+        "settings": {
+          "title": ""
+        }
       }
     },
     "content_for_index": [
