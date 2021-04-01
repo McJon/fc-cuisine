@@ -98,7 +98,7 @@
                   {%- endif -%}
                   {%- if show_link_button -%}
                     <div class="slideshow__btn-wrapper{% if block.settings.slide_title != blank or block.settings.subheading != blank %} slideshow__btn-wrapper--push{% endif %}">
-                      <a href="{{ block.settings.button_link }}" class="btn slideshow__btn">
+                      <a href="{{ block.settings.button_link }}" class="reserve-button"> {%comment%}btn slideshow__btn{%endcomment%}
                         {{ block.settings.button_label | escape }}
                       </a>
                     </div>
