@@ -22,7 +22,8 @@
               <td class="cart__meta small--text-left" data-cart-table-cell>
                 <div class="cart__product-information">
                   <div class="cart__image-wrapper">
-                    <img class="cart__image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}" data-cart-item-image>
+                    {% comment %} <img class="cart__image{% if item.image == null %} hide{% endif %}" src="{{ item | img_url: 'x190' }}" alt="{{ item.image.alt | escape }}" data-cart-item-image> {% endcomment %}
+                    {{ 'product-1' | placeholder_svg_tag: ' grid-view-item__image lazyload'}}
                   </div>
                   <div>
                     <div class="list-view-item__title">
