@@ -7093,6 +7093,15 @@ hr {
     background-color: #8b2023;
   }
 
+  #RecoverPasswordForm, #CustomerLoginForm{
+    background: rgb(245, 245, 245);
+    padding: 5rem;
+
+    -moz-box-shadow:    5px 5px 10px #cecece;
+   -webkit-box-shadow: 5px 5px 10px #cecece;
+    box-shadow:         5px 5px 10px #cecece;
+  }
+
   /* .login-block{
     display: flex;
     flex-direction: row-reverse;
@@ -7109,3 +7118,10 @@ hr {
   } */
 
   /* Form - login block */
+
+  /* Forgot Password Template */
+  input[type="email"]::placeholder{
+    opacity: 0.2;
+  }
+  /* Forgot Password Template */
+  

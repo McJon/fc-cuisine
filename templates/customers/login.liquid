@@ -75,7 +75,9 @@
 
         <div class="text-center">
           <h2 id="RecoverHeading">{{ 'customer.recover_password.title' | t }}</h2>
-          <p>{{ 'customer.recover_password.subtext' | t }}</p>
+          <div class="text-center" style="font-size: 0.95rem; margin-bottom: 1.5rem">
+                  <p>{{ 'customer.recover_password.subtext' | t }}</p>
+            </div>
         </div>
 
         <div class="form-vertical">
@@ -88,7 +90,7 @@
               <span class="hide reset-password-success"></span>
             {% endif %}
 
-            <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
+            {% comment %} <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label> {% endcomment %}
             <input
               type="email"
               value=""
@@ -97,11 +99,13 @@
               class="input-full{% if form.errors %} input--error{% endif %}"
               autocorrect="off"
               autocapitalize="off"
+              placeholder="Enter your e-mail"
               {% if form.errors %}
                 aria-invalid="true"
                 aria-describedby="RecoverEmail-email-error"
               {%- endif -%}
               >
+
             {%- if form.errors -%}
               <span id="RecoverEmail-email-error" class="input-error-message">
                 <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
