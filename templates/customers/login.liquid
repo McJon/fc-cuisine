@@ -6,67 +6,78 @@
         {{ 'customer.recover_password.success' | t }}
       </div>
 
-      <div id="CustomerLoginForm" class="form-vertical">
-
-        <h1 id="LoginHeading" class="text-center">{{ 'customer.login.title' | t }}</h1>
-
-        {% form 'customer_login', novalidate: 'novalidate' %}
-
-          {%- if form.errors -%}
-            <div class="form-message form-message--error">
-              <h2 class="h3 form-message__title " tabindex="-1" data-form-status>{{ 'contact.form.error_heading' | t }}</h2>
-              {{ form.errors | default_errors }}
-            </div>
-          {%- endif -%}
-
-          <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
-          <input
-            type="email"
-            name="customer[email]"
-            id="CustomerEmail"
-            autocomplete="email"
-            autocorrect="off"
-            autocapitalize="off"
-            {%- if form.errors contains 'form' -%}
-              class="input--error"
-              aria-invalid="true"
-            {%- endif -%}
-            >
-
-          {% if form.password_needed %}
-            <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
-            <input
-              type="password"
-              value=""
-              name="customer[password]"
-              id="CustomerPassword"
-              {%- if form.errors contains 'form' -%}
-                class="input--error"
-                aria-invalid="true"
-              {%- endif -%}
-            >
-          {% endif %}
-
-          <div class="text-center">
-            {% if form.password_needed %}
-              <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
-            {% endif %}
-
-            <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
-
-            <p>
-              {{ 'layout.customer.create_account' | t | customer_register_link }}
-            </p>
+      <div class="login-block">
+          <div class="image-form">
+            {% comment %} <p>Hello There</p> {% endcomment %}
           </div>
 
-        {% endform %}
+          <div id="CustomerLoginForm" class="form-vertical">
+
+            <h1 id="LoginHeading" class="text-center">{{ 'customer.login.title' | t }}</h1>
+
+            {% form 'customer_login', novalidate: 'novalidate' %}
+
+              {%- if form.errors -%}
+                <div class="form-message form-message--error">
+                  <h2 class="h3 form-message__title " tabindex="-1" data-form-status>{{ 'contact.form.error_heading' | t }}</h2>
+                  {{ form.errors | default_errors }}
+                </div>
+              {%- endif -%}
+
+              <label for="CustomerEmail">{{ 'customer.login.email' | t }}</label>
+              <input
+                type="email"
+                name="customer[email]"
+                id="CustomerEmail"
+                autocomplete="email"
+                autocorrect="off"
+                autocapitalize="off"
+                {%- if form.errors contains 'form' -%}
+                  class="input--error"
+                  aria-invalid="true"
+                {%- endif -%}
+                >
+
+              {% if form.password_needed %}
+                <label for="CustomerPassword">{{ 'customer.login.password' | t }}</label>
+                <input
+                  type="password"
+                  value=""
+                  name="customer[password]"
+                  id="CustomerPassword"
+                  {%- if form.errors contains 'form' -%}
+                    class="input--error"
+                    aria-invalid="true"
+                  {%- endif -%}
+                >
+              {% endif %}
+
+              <div class="text-center">
+
+                <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
+
+                {% if form.password_needed %}
+                  <div class="create-account">
+                    <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
+                    <p>
+                      New to The Chef Table? {{ 'layout.customer.create_account' | t | customer_register_link }}
+                    </p>
+                  </div>
+                {% endif %}
+              </div>
+
+            {% endform %}
+          </div>
       </div>
 
+      {% comment %} Recover Password Form {% endcomment %}
       <div id="RecoverPasswordForm" class="hide">
 
         <div class="text-center">
           <h2 id="RecoverHeading">{{ 'customer.recover_password.title' | t }}</h2>
-          <p>{{ 'customer.recover_password.subtext' | t }}</p>
+          <div class="text-center" style="font-size: 0.95rem; margin-bottom: 1.5rem">
+                  <p>{{ 'customer.recover_password.subtext' | t }}</p>
+            </div>
         </div>
 
         <div class="form-vertical">
@@ -79,7 +90,7 @@
               <span class="hide reset-password-success"></span>
             {% endif %}
 
-            <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label>
+            {% comment %} <label for="RecoverEmail">{{ 'customer.recover_password.email' | t }}</label> {% endcomment %}
             <input
               type="email"
               value=""
@@ -88,11 +99,13 @@
               class="input-full{% if form.errors %} input--error{% endif %}"
               autocorrect="off"
               autocapitalize="off"
+              placeholder="Enter your e-mail"
               {% if form.errors %}
                 aria-invalid="true"
                 aria-describedby="RecoverEmail-email-error"
               {%- endif -%}
               >
+
             {%- if form.errors -%}
               <span id="RecoverEmail-email-error" class="input-error-message">
                 <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>

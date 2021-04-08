@@ -73,6 +73,9 @@
   - Remove `outline: none` from `.slick-dots li button`
 ==============================================================================*/
 
+ /* Anouncement bar background */
+
+
 .spr-badge[data-rating="0.0"] {
   display: none;
 }
@@ -3853,7 +3856,8 @@ hr {
   position: relative;
   text-align: center;
   border-bottom: 1px solid transparent;
-  padding: 2px; }
+  padding: 2px;
+ }
 
 .announcement-bar__link {
   display: block; }
@@ -7066,3 +7070,62 @@ hr {
     width: 60%;
     margin: auto;
   }
+
+  /* Forget password - create account text -> make inline */
+  .forget-create-section{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.2rem;
+  }
+
+  .create-account p{
+    font-family: Helvetica, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.1px;
+  }
+
+  /* Forget password - create account text -> make inline */
+
+  /* Form - login block */
+
+  .btn:not([disabled]):hover{
+    color: #ffffff;
+    background-color: #8b2023;
+  }
+
+  #RecoverPasswordForm, #CustomerLoginForm, #RegisterForm{
+    /* background: #f0f0f0; */
+    padding: 5rem;
+
+    -moz-box-shadow:    0px 0px 15px #cecece;
+   -webkit-box-shadow: 0px 0px 15px #cecece;
+    box-shadow:         0px 0px 15px #cecece;
+  }
+
+  .create-title{
+    padding-bottom: 1.2rem;
+  }
+
+  /* .login-block{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-form{
+    width:100%;
+    background: tomato;
+  }
+
+  #CustomerLoginForm{
+    width:100%;
+    background: red;
+  } */
+
+  /* Form - login block */
+
+  /* Forgot Password Template */
+  input[type="email"]::placeholder{
+    opacity: 0.2;
+  }
+  /* Forgot Password Template */
+  
