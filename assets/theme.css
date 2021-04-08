@@ -7075,5 +7075,13 @@ hr {
   .forget-create-section{
     display: flex;
     justify-content: flex-end;
-    margin-bottom: 1.2rem
+    margin-bottom: 1.2rem;
   }
+
+  .create-account p{
+    font-family: Helvetica, sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 1.1px;
+  }
+
+  /* Forget password - create account text -> make inline */

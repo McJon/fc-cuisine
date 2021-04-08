@@ -49,18 +49,13 @@
 
           <div class="text-center">
 
-            {% if form.password_needed %}
-              <div class="forget-create-section">
-                <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
-              </div>
-            {% endif %}
-
             <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
 
             {% if form.password_needed %}
-              <div>
+              <div class="create-account">
+                <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
                 <p>
-                  {{ 'layout.customer.create_account' | t | customer_register_link }}
+                  New to The Chef Table? {{ 'layout.customer.create_account' | t | customer_register_link }}
                 </p>
               </div>
             {% endif %}
