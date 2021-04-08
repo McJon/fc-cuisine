@@ -7093,7 +7093,7 @@ hr {
     background-color: #8b2023;
   }
 
-  #RecoverPasswordForm, #CustomerLoginForm{
+  #RecoverPasswordForm, #CustomerLoginForm, #RegisterForm{
     background: rgb(245, 245, 245);
     padding: 5rem;
 
@@ -7102,6 +7102,10 @@ hr {
     box-shadow:         5px 5px 10px #cecece;
   }
 
+  .create-title{
+    padding-bottom: 1.2rem;
+  }
+  
   /* .login-block{
     display: flex;
     flex-direction: row-reverse;

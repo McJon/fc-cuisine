@@ -4,10 +4,15 @@
 
       <div class="form-vertical">
 
-        <h1 class="text-center">{{ 'customer.register.title' | t }}</h1>
 
         {%- assign formId = 'RegisterForm' -%}
+
+        
+
         {% form 'create_customer', id: formId, novalidate: 'novalidate' %}
+
+          <h1 class="text-center create-title">{{ 'customer.register.title' | t }}</h1>
+
           {% include 'form-status', form: form, form_id: formId %}
 
           <label for="{{ formId }}-FirstName">{{ 'customer.register.first_name' | t }}</label>
