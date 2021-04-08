@@ -7085,3 +7085,27 @@ hr {
   }
 
   /* Forget password - create account text -> make inline */
+
+  /* Form - login block */
+
+  .btn:not([disabled]):hover{
+    color: #ffffff;
+    background-color: #8b2023;
+  }
+
+  /* .login-block{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .image-form{
+    width:100%;
+    background: tomato;
+  }
+
+  #CustomerLoginForm{
+    width:100%;
+    background: red;
+  } */
+
+  /* Form - login block */
