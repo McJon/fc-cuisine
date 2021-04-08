@@ -73,6 +73,9 @@
   - Remove `outline: none` from `.slick-dots li button`
 ==============================================================================*/
 
+ /* Anouncement bar background */
+
+
 .spr-badge[data-rating="0.0"] {
   display: none;
 }
@@ -3853,7 +3856,8 @@ hr {
   position: relative;
   text-align: center;
   border-bottom: 1px solid transparent;
-  padding: 2px; }
+  padding: 2px;
+ }
 
 .announcement-bar__link {
   display: block; }
@@ -7065,4 +7069,11 @@ hr {
   .about-para{
     width: 60%;
     margin: auto;
+  }
+
+  /* Forget password - create account text -> make inline */
+  .forget-create-section{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.2rem
   }

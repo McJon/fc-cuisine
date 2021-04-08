@@ -48,15 +48,22 @@
           {% endif %}
 
           <div class="text-center">
+
             {% if form.password_needed %}
-              <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
+              <div class="forget-create-section">
+                <p><a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a></p>
+              </div>
             {% endif %}
 
             <input type="submit" class="btn" value="{{ 'customer.login.sign_in' | t }}">
 
-            <p>
-              {{ 'layout.customer.create_account' | t | customer_register_link }}
-            </p>
+            {% if form.password_needed %}
+              <div>
+                <p>
+                  {{ 'layout.customer.create_account' | t | customer_register_link }}
+                </p>
+              </div>
+            {% endif %}
           </div>
 
         {% endform %}
