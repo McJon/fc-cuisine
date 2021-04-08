@@ -7094,18 +7094,18 @@ hr {
   }
 
   #RecoverPasswordForm, #CustomerLoginForm, #RegisterForm{
-    background: rgb(245, 245, 245);
+    /* background: #f0f0f0; */
     padding: 5rem;
 
-    -moz-box-shadow:    5px 5px 10px #cecece;
-   -webkit-box-shadow: 5px 5px 10px #cecece;
-    box-shadow:         5px 5px 10px #cecece;
+    -moz-box-shadow:    5px 5px 5px #cecece;
+   -webkit-box-shadow: 5px 5px 5px #cecece;
+    box-shadow:         5px 5px 5px #cecece;
   }
 
   .create-title{
     padding-bottom: 1.2rem;
   }
-  
+
   /* .login-block{
     display: flex;
     flex-direction: row-reverse;
