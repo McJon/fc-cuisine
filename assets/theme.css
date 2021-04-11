@@ -7151,3 +7151,24 @@ hr {
    width: 100%;
    margin: auto;
  } */
+
+ /* Email Template Styling */
+
+ .shop-name__cell {
+  display: flex !important;
+  justify-content: center !important;
+  margin-bottom: 30px !important;
+}
+
+.order-number__cell{
+  text-align: center !important;
+}
+
+/* subscribe checkbox on create account page */
+.create-subscribe{
+  display: flex;
+  margin-bottom: 15px;
+}
+.create-subscribe p{
+  margin-left: 10px;
+}

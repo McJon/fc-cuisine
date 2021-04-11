@@ -66,6 +66,12 @@
             </span>
           {%- endif -%}
 
+          <div class="create-subscribe">
+              <input type="hidden" name="customer[accepts_marketing]" value="" />
+              <input type="checkbox" name="customer[accepts_marketing]" />
+              <p>Subscribe to stay updated with new products and offers!</p>
+          </div>
+
           <p class="text-center">
             <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn">
           </p>
