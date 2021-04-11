@@ -7129,10 +7129,15 @@ hr {
   }
   /* Forgot Password Template */
 
-  /*  */
+  /*  Map BG image Linear Gradient */
 
   .map-section__image{
     background-image: linear-gradient(rgba(179, 39, 45, 0.1), rgba(179, 39, 45, 0.1), rgba(179, 39, 45, 0.2)), url("https://cdn.shopify.com/s/files/1/0526/0584/5668/files/fanshawe.jpg?v=1611873345") !important;
   }
 
+  /* News Margin setup */
+
+  .shopify-section{
+    padding: 15px 0;
+  }
   
