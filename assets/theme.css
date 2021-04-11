@@ -7087,6 +7087,16 @@ hr {
   /* Forget password - create account text -> make inline */
 
   /* Form - login block */
+  #ContactForm{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ContactForm .btn{
+    width: 20%;
+    margin: auto;
+  }
+
 
   .btn:not([disabled]):hover{
     color: #ffffff;
@@ -7135,9 +7145,9 @@ hr {
     background-image: linear-gradient(rgba(179, 39, 45, 0.1), rgba(179, 39, 45, 0.1), rgba(179, 39, 45, 0.2)), url("https://cdn.shopify.com/s/files/1/0526/0584/5668/files/fanshawe.jpg?v=1611873345") !important;
   }
 
-  /* News Margin setup */
-
-  .shopify-section{
-    padding: 15px 0;
-  }
-  
+  /* collections style */
+ /* #shopify-section-list-collections-template .page-width ul{
+   background-color: red;
+   width: 100%;
+   margin: auto;
+ } */
